@@ -1,7 +1,7 @@
 name = "review-intel-api"
 main = "src/index.ts"
 compatibility_date = "2024-12-30"
-account_id = "4973d6a55db9833e403b5aa16d092be2"
+account_id = "8e3dbfcd4be56c9b798b6c743c98502a"
 
 [vars]
 ENVIRONMENT = "development"

@@ -1,7 +1,7 @@
 import { getCommentsForProduct } from './reddit';
 import type { AnalysisState, SentimentResult, MessageType } from './types';
 
-const WORKER_URL = 'https://review-intel-api.epitrove.workers.dev/analyze';
+const WORKER_URL = 'https://review-intel-api.arunesh-vijaya-vijay.workers.dev/analyze';
 
 let currentState: AnalysisState = { status: 'idle' };
 
