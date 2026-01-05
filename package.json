@@ -11,6 +11,13 @@
     "build": "npm run build --workspaces",
     "dev:extension": "npm run dev --workspace=extension",
     "dev:worker": "npm run dev --workspace=worker",
-    "deploy:worker": "npm run deploy --workspace=worker"
+    "deploy:worker": "npm run deploy --workspace=worker",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8",
+    "@vitest/coverage-v8": "^2.1.8"
   }
 }

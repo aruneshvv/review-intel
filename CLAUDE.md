@@ -23,6 +23,12 @@ npm run dev:worker
 
 # Deploy worker to Cloudflare
 npm run deploy:worker
+
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
 ```
 
 ### First-time Setup
