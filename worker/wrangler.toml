@@ -1,0 +1,11 @@
+name = "review-intel-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-30"
+account_id = "4973d6a55db9833e403b5aa16d092be2"
+
+[vars]
+ENVIRONMENT = "development"
+
+# Uncomment and set your API key in Cloudflare dashboard or use wrangler secret
+# [secrets]
+# ANTHROPIC_API_KEY = ""

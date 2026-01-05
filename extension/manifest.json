@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Review Intel",
+  "version": "0.1.0",
+  "description": "Compare public hype with real user sentiment from Reddit",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.reddit.com/*",
+    "https://oauth.reddit.com/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "dist/popup.html",
+    "default_title": "Review Intel"
+  }
+}

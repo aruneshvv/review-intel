@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Intel</title>
+  <link rel="stylesheet" href="popup/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Review Intel</h1>
+    </header>
+
+    <div id="idle-state" class="state">
+      <p class="hint">Select product text on any page, then right-click and choose "Analyze with Review Intel"</p>
+      <div class="manual-input">
+        <input type="text" id="product-input" placeholder="Or enter product name...">
+        <button id="analyze-btn">Analyze</button>
+      </div>
+    </div>
+
+    <div id="loading-state" class="state hidden">
+      <div class="spinner"></div>
+      <p id="loading-product">Analyzing...</p>
+    </div>
+
+    <div id="success-state" class="state hidden">
+      <div class="product-name" id="result-product"></div>
+
+      <div class="score-container">
+        <div class="score-circle" id="score-circle">
+          <span id="score-value">--</span>
+        </div>
+        <div class="sentiment-label" id="sentiment-label">--</div>
+      </div>
+
+      <div class="summary" id="summary"></div>
+
+      <div class="details">
+        <div class="positives">
+          <h3>Positives</h3>
+          <ul id="positives-list"></ul>
+        </div>
+        <div class="negatives">
+          <h3>Negatives</h3>
+          <ul id="negatives-list"></ul>
+        </div>
+      </div>
+
+      <div class="sample-size" id="sample-size"></div>
+    </div>
+
+    <div id="error-state" class="state hidden">
+      <div class="error-icon">!</div>
+      <p class="error-message" id="error-message"></p>
+      <button id="retry-btn">Try Again</button>
+    </div>
+  </div>
+
+  <script src="popup/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "review-intel-extension",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/background.ts src/content.ts src/popup/popup.ts --bundle --outdir=dist --format=iife --target=chrome90 && npm run copy-assets",
+    "copy-assets": "cp src/popup/popup.html dist/ && mkdir -p dist/popup && cp src/popup/popup.css dist/popup/",
+    "dev": "npm run build && npm run build -- --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  }
+}

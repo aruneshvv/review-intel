@@ -1,0 +1,16 @@
+{
+  "name": "review-intel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser extension that compares public hype with private sentiment",
+  "workspaces": [
+    "extension",
+    "worker"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:extension": "npm run dev --workspace=extension",
+    "dev:worker": "npm run dev --workspace=worker",
+    "deploy:worker": "npm run deploy --workspace=worker"
+  }
+}
